@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:adv_prj/second_screen.dart';
+import 'package:adv_prj/second_screen_design.dart';
 
 class CustomizedButton extends StatefulWidget {
   const CustomizedButton({super.key});
@@ -10,9 +10,11 @@ class CustomizedButton extends StatefulWidget {
 
 class _CustomizedOutlinedButton extends State<CustomizedButton> {
   void startQuiz() {
-    setState(() {
-        runApp(SecondScreen());
-    });
+    setState(
+      () {
+        runApp(SecondScreenDesign());
+      },
+    );
   }
 
   @override

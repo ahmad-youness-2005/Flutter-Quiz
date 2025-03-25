@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:adv_prj/home_page_button.dart';
+import 'package:adv_prj/second_screen_buttons.dart';
 
-class StylingHomePage extends StatelessWidget {
-  const StylingHomePage({super.key});
+class SecondScreenDesign extends StatelessWidget {
+  const SecondScreenDesign({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class StylingHomePage extends StatelessWidget {
               end: Alignment.bottomRight,
             ),
           ),
-          child: CustomizedButton(),
+          child: SecondScreenButtons(),
         ),
       ),
     );
