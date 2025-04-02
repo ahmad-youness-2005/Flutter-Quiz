@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:adv_prj/styling_home_page.dart';
+import 'package:adv_prj/quiz.dart';
 
 void main() {
-  runApp(StylingHomePage());
+  runApp(Quiz());
 }

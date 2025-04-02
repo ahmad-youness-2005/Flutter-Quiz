@@ -1,19 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:adv_prj/second_screen.dart';
+import 'package:adv_prj/second_screen_design.dart';
 
-class CustomizedButton extends StatefulWidget {
-  const CustomizedButton({super.key});
-
-  @override
-  State<CustomizedButton> createState() => _CustomizedOutlinedButton();
-}
-
-class _CustomizedOutlinedButton extends State<CustomizedButton> {
-  void startQuiz() {
-    setState(() {
-        runApp(SecondScreen());
-    });
-  }
+class StartScreen extends StatelessWidget {
+  StartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +24,12 @@ class _CustomizedOutlinedButton extends State<CustomizedButton> {
             height: 20,
           ),
           OutlinedButton.icon(
-            onPressed: startQuiz,
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SecondScreenDesign()));
+            },
             icon: Icon(
               Icons.arrow_forward,
               color: Colors.white,
