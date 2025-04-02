@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adv_prj/second_screen_buttons.dart';
+import 'package:adv_prj/data/questions.dart';
 
 class SecondScreenDesign extends StatelessWidget {
   const SecondScreenDesign({super.key});

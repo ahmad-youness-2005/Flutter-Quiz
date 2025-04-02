@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:adv_prj/home_page_button.dart';
 
-class StylingHomePage extends StatelessWidget {
-  const StylingHomePage({super.key});
+class Quiz extends StatefulWidget {
+  State<Quiz> createState() => _QuizState();
+}
 
+class _QuizState extends State<Quiz> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +21,7 @@ class StylingHomePage extends StatelessWidget {
               end: Alignment.bottomRight,
             ),
           ),
-          child: CustomizedButton(),
+          child: StartScreen(),
         ),
       ),
     );
